@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyText
+  url: MyString
+  source: MyString
+  source_url: MyString
+  section_id: 1
+
+two:
+  title: MyText
+  url: MyString
+  source: MyString
+  source_url: MyString
+  section_id: 1

@@ -1,0 +1,823 @@
+
+#pagetitle {
+
+	
+	margin: 10px auto;
+	padding-bottom: 0;
+	height: 170px;
+
+}
+
+
+
+#titleh2 {
+
+	position: relative;
+	top: -155px;
+	font-size: 30px;
+	left: 340px;
+	font-family: "Futura";
+	width: 300px;
+}
+
+#titleh1 {
+
+	margin-left: 90px;
+	margin-top:22px;
+	margin-bottom: 0;
+	font-family: "Futura";
+	font-size: 90px;
+}
+
+
+
+
+#lightboxlink {
+
+	text-decoration: none;
+	color: black;
+}
+
+
+#masthead .alien {
+
+	position: relative;
+	top: -173px;
+	right: -650px;
+	height: 130px
+
+}
+
+#nytlogo img {
+
+	display: none;
+	position: relative;
+	top: 70px;
+	left: 258px;
+	height: 220px;
+}
+
+#letteri {
+
+	display: none;
+}
+
+#wrapper {
+
+	margin: 0 auto;
+	width: inherit;
+}
+
+#stuff {
+
+	height: 200px;
+	background: pink;
+}
+
+#contentwrapper {
+
+	position: relative;
+	
+	height: 1800px;
+	
+ 	text-align:center;
+ 	overflow: hidden; 
+}
+
+
+.grid_4 {
+
+	float: left;
+}
+
+#gridtitle img {
+
+	padding: 10px 0px;
+}
+
+#grid1 {
+	
+	margin-top: 10px;
+	float: left;
+	background: rgb(220, 247, 243);
+
+
+}
+
+#grid2 {
+
+	
+	height: inherit;
+	margin-top: 10px;
+	float: left;
+	background: rgb(255, 252, 221);
+}
+
+#grid3 {
+
+	
+	height: inherit;
+	margin-top: 10px;
+	float: left;
+	background: rgb(255, 216, 216);
+}
+
+#grid4 {
+
+	height: inherit;
+	margin-top: 10px;
+	float: left;
+	background: rgb(245, 162, 162);
+	
+
+
+}
+
+#grid5 {
+
+	height: inherit;
+	margin-top: 10px;
+	float: left;
+	background: rgb(244, 252, 184);
+	
+
+
+}
+
+#grid6 {
+
+	height: inherit;
+	margin-top: 10px;
+	float: left;
+	background: rgb(218, 230, 129);
+	
+
+
+}
+
+#items {
+
+	width: 960px;
+	position:absolute;
+	left:0;
+}
+
+
+
+
+
+#story1, #story2, #story3  {
+
+	border-top: 1px black dashed;
+	padding: 25px 5px;
+
+
+}
+
+
+#items h1 {
+
+
+	font-family: Codystar;
+	font-size: 35px;
+	font-weight: normal;
+	padding-top: 15px;
+}
+
+#gridtitle p {
+
+
+	color: black;
+	font-size: 15px;
+	padding-bottom: 15px;
+	font-family: "Futura" ;
+}
+
+
+}
+.back #gridtitle {
+
+	height: 114px;
+}
+
+.back #grid6 #gridtitle img {
+
+	padding-top: 20px;
+}
+
+
+
+.back #grid5 #gridtitle img {
+
+	padding-top: 30px
+}
+
+
+
+#gridtitle a {
+
+	text-decoration: none;
+	color: black;
+}
+
+#items a {
+
+	text-decoration: none;
+	font-family: "Futura";
+	color: black;
+}
+
+h1 a{
+
+	color: black;
+}
+
+#items h2 {
+
+	font-family: Codystar;
+	font-size:	25px;
+	padding-bottom: 10px;
+	color: black;
+}
+
+p {
+
+	font-size: 20px;
+	font-family:"Futura";
+	color: red;
+}
+
+
+
+#buttons img {
+
+	width: 70px;
+
+}
+
+#leftbutton {
+
+	float:left;
+	display:none;
+}
+
+#rightbutton {
+
+	float:right;
+}
+
+#wantmore {
+
+	position: relative;
+	left: 764px;
+	width: 300px;
+	
+	display: none;
+}
+
+#wantmore a {
+
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+	font-family:"Futura";
+
+}
+
+#masthead p {
+
+	color: black;
+	font-size: 16px;
+}
+
+#top5news a {
+
+	text-decoration: none;
+
+}
+
+#top5news {
+
+	padding: 15px;
+	position: relative;
+	color: black;
+	background: rgb(220, 247, 243);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 180px;
+	top: -300px;
+	left: 870px;
+	display: none;
+}
+
+#top5news::after {
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 50px;
+	border-width: 15px 15px 0;
+	border-style: solid;
+	border-color: rgb(220, 247, 243) transparent;
+	display: block;
+	width: 0;
+}
+
+#top5news img {
+
+	position: absolute;
+	top: -10px;
+	right: -5px;
+	width: 20px;
+	height: 20px ;
+
+}
+
+
+
+#aboutlink {
+
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 150px;
+
+}
+
+#genassembly {
+
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 150px;
+}
+
+#genassembly p {
+
+	font-family: "Futura";
+	color: black;
+	font-size: 16px;
+	text-decoration: none
+}
+
+#aboutlink a {
+
+	color: black;
+	text-decoration: none;
+	font-family: "Futura";
+	font-size: 23px;
+}
+
+#interactive {
+
+	position: fixed;
+	top: 50px;
+	left: 10px;
+	width: 210px;
+	font-family: "Futura";
+	font-size: 14px;
+	
+}
+
+#lightabout {
+
+	position: absolute;
+	top: 250px;
+	left: 1160px;
+	font-family: "Futura";
+	display: none;
+}
+
+#lightaboutcopy {
+
+	position: relative;
+	width: 110px;
+	top: 5px;
+	left: 10px;
+}
+
+#about {
+
+	position: fixed;
+	top: 50px;
+	left: 25%;
+	width: 600px;
+	font-family: "Futura";
+	background: white;
+	padding: 20px;
+	text-align: center;
+	z-index: 2;
+}
+
+#about h2 {
+
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+#about p {
+
+	color: #333;
+}
+
+#about a {
+
+	color: red;
+	text-decoration: none;
+}
+
+#about .close{
+
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+
+#newscoverage {
+
+	padding-top: 20px;
+}
+
+
+#newscoverage img {
+
+	position: relative;
+	bottom: 0px;
+	width: 100px;
+	padding: 20px 20px 5px 20px;
+
+}
+
+
+#aboutwrapper {
+
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background: rgba(0, 0, 0, 0.6);
+	 display: none;
+	 z-index: 1;
+}
+
+#mobileheader {
+
+	display: none;
+}
+
+
+#custom-tweet-button a {
+    display: block;
+    padding: 2px 5px 2px 20px;
+    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+    height: 10px;
+  }
+
+
+.mainstream {
+
+	position: relative;
+	top: -200px;
+	left: 650px;
+	font-family: "Futura";
+	color: red;
+	line-height: 20px
+}
+
+.mainstream a {
+	text-decoration: none;
+	color: red;
+}
+
+
+
+/* transitions */
+
+
+
+#grid4, #grid5, #grid6 {
+
+	display: none;
+}
+
+#contentwrapper {
+
+	
+	position: relative;
+	-webkit-perspective: 10000;
+         -moz-perspective: 10000;
+           -o-perspective: 10000;
+              perspective: 10000;
+}
+
+#items {
+
+      position: absolute;
+      
+
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+
+              -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+
+           
+
+}
+
+#items.flipped {
+
+	-webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform: rotateY( -180deg );
+         -moz-transform: rotateY( -180deg );
+           -o-transform: rotateY( -180deg );
+              transform: rotateY( -180deg );
+
+          }
+
+#items figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+
+#items .back {
+
+
+      -webkit-transform: rotateY( -180deg );
+         -moz-transform: rotateY( -180deg );
+           -o-transform: rotateY( -180deg );
+              transform: rotateY( -180deg );
+    }
+
+
+
+
+/* LIGHTBOX*/
+
+#newarrow {
+
+	width: 140px;
+	position: relative;
+	top: -85px;
+	right: -930px;
+	display: none;
+}
+
+#newarrow h2 {
+
+	padding-left: 60px;
+	font-size: 30px;
+	text-align: center;
+	font-family: "Futura";
+}
+
+#newarrow a {
+
+	text-decoration: none;
+	color: black;
+}
+#picstitle {
+
+	float: left;
+}
+
+#slideshowlink {
+
+	float: right;
+	padding-top: 20px;
+	padding-right: 10px;
+	color: red;
+}
+
+#slideshowlink img {
+
+	width: 50px;
+}
+
+#slideshowlink p {
+
+	color: red;
+}
+
+#lightboxwrapper, #lightbox {
+
+	display: none;
+}
+
+
+#lightboxwrapper {
+
+	 position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+	z-index: 1;
+}
+
+#lightbox {
+
+	position: absolute;
+	width:1100px;
+	height: 550px;
+	top: 20px;
+	margin-left: 100px;
+	background: white;
+	overflow: hidden;
+	
+	z-index: 3;
+	
+}
+
+#lightboxpic {
+
+	width: 800px;
+	height:400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#image {
+
+	margin: 0 auto;
+}
+
+#lightboxpic img {
+
+	max-height: 390px;
+	max-width: 600px;
+	margin-top: 20px;
+}
+
+#lightboxcaption {
+
+	width: 960px;
+	height: 100px;
+	margin: 20px auto;
+	text-align: center;
+	font-family: "Futura";
+	color: black;
+}
+
+#lightboxcaption .commentslink {
+
+	font-size: 20px;
+	font-family: "Futura";
+	color: black;
+}
+
+#lightboxcontrolLeft img {
+
+	position: relative;
+	height: 80px;
+	width:173px;
+	bottom: 370px;
+	left:15px;
+}
+
+#lightboxcontrolRight img {
+
+	position: relative;
+	height: 80px;
+	width: 173px;
+	bottom: 455px;
+	float: right;
+	right: 15px;
+}
+
+
+
+
+#lightboxp a {
+
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	color: black;
+}
+
+#lightboxp p {
+
+	font-size: 50px;
+	color: white;
+}
+
+#closebutton a {
+
+	float: right;
+	padding: 0px 10px 0 0;
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	font-family: "Futura";
+	font-weight: bold;
+
+}
+
+#closebutton img {
+
+	height: 20px;
+	top: -28px;
+	right: -40px;
+	position: relative;
+}
+
+#redditcomments {
+
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*END OF LIGHTBOX*/
+
+/*MEDIA QUERIES */
+
+@media (max-device-width: 480px) {
+
+
+	#masthead, #aboutlink, #buttons, #slideshowlink, #genassembly, #lightabout, #interactive {
+
+		display: none;
+	}
+
+	#picstitle {
+
+		float: center;
+	}
+
+	#mobileheader, #contentwrapper, #items, #content  {
+
+		display: block;
+		width: 100%;
+		overflow: inherit;
+	}
+
+	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
+		display: block;
+		width: 100%;
+		height: inherit;
+		margin-bottom: 10px;
+	}
+
+
+	#contentwrapper {
+
+		margin: 0 auto;
+	}
+
+	.grid_4 {
+
+		margin: 0;
+	}
+
+	body {
+	min-width: 100%;
+}
+
+
+} 
+/* END OF MEDIA QUERIES*/
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+#lightabout {
+
+	display: none;
+}	
+
+#genassembly, #lightabout, #interactive {
+
+	display: none;
+}
+
+
+}
+
+

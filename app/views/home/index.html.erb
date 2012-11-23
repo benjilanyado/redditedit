@@ -1,0 +1,419 @@
+<body>
+
+	<div id="aboutlink">
+	<h2><a href="#">What the...?</a></h2>
+   	</div>
+   	<div id="genassembly">
+	<p>Triggered by...</a></p>
+	<a href="http://generalassemb.ly/education/?where=london" target="_blank"><img src="images/genassembly.png"></a>
+   	</div>
+
+   	<div id="interactive">
+
+   		<div id="interactivecopy">
+   			From the creator of Reddit Edit:
+   		</div>
+
+   		<div id="interactiveimage">
+   			<a href="http://www.benjlabs.com/interactive/" target="_blank"><img src="images/interactive.png"></a>
+   		</div>
+
+   	</div>
+
+
+	<div id="aboutwrapper">
+
+	<div id ="about">
+
+	<a href="#"><img class="close" src="images/closebutton.png"></a>
+
+	<h2>What the...? </h2>
+
+	<p><a href="http://www.reddit.com" target="_blank">Reddit</a> isn't just about cats. Ok, it's often about cats. But it's also an extraordinary source of news, and what people are interested in, right now. The Reddit Edit pulls the three most popular links from six different Subreddits using the Reddit API. That's it really.<br/><br/>It's also an attempt to make Reddit pretty. <br/><br/>Designed & coded by <a href="http://www.twitter.com/benjilanyado" target="_blank">Benji Lanyado</a> (<a href="mailto:benjilanyado@gmail.com">email</a>)</p>
+
+	 	<div id="newscoverage">
+
+	   		<p>As featured in...</p>
+			<a href="http://www.theatlantic.com/technology/archive/2012/07/just-the-headlines-maam-the-summarized-simplicity-of-the-reddit-edit/260416/" target="_blank"><img src="images/theatlantic.png"></a>
+			<a href="http://mashable.com/2012/07/30/reddit-edit/" target="_blank"><img src="images/mashable.png"></a>
+			<a href="http://thenextweb.com/apps/2012/07/27/the-reddit-edit-reels-in-the-top-links-from-select-reddit-categories-and-makes-it-look-good-too/" target="_blank"><img src="images/thenextweb.png"></a>
+			<a href="http://www.skynews.com.au/tech/article.aspx?id=787392" target="_blank"><img src="images/skynews.png"></a>
+			<a href="http://storify.com/benjilanyado/reddit-edit-press" target="_blank"><p>And others...</p></a>
+
+
+		   	</div>	
+
+		
+</div>
+
+	</div>
+
+<div id="lightabout">
+
+<img src="images/crayon.png">
+
+<div id="lightaboutcopy">
+	flick through the 10 most popular images on Reddit
+</div>
+
+</div>	
+
+
+<div id="lightboxwrapper">
+		  				
+	  					<div id="lightbox">
+
+
+		  					<div id="closebutton">
+
+		  						<a href="#">X</a>
+
+		  					</div>
+
+		  					<div id="lightboxpic">
+
+		  						<div id="image"><a href="#" target="_blank"><img  src="images/redditalienpaper.png"></a> </div>
+		  					</div>
+
+		  					<div id="lightboxcaption">
+
+		  						<div id="lightboxp">
+
+		  							<a class="imagelink" href="#" target="_blank"><h2></h2></a>
+		  						</div>
+
+		  					</div>
+
+		  					<div id="lightboxcontrolLeft">
+		  						<a href="#"><img  src="images/leftbutton.png"></a>
+		  					</div>
+
+		  					<div id="lightboxcontrolRight">
+		  						<a href="#"><img  src="images/rightbutton.png"></a>
+		  					</div>
+		  				</div>
+	  				</div>
+
+
+
+	<div id="wrapper" class="container_12">
+
+		<img id="mobileheader" src="images/mobileheader.png">
+
+		<div id="masthead" class="container_12">
+		
+
+
+					<div id="pagetitle" class="container_12">
+
+						<div id="titleh1">
+							<h1> THE REDDIT ED<span id="gaps">&nbsp&nbsp&nbsp</span><span id="letteri">I</span>T</h1>
+							<img id="campaign-icon" class="alien" src="images/redditalienpaper.png">
+							<div class="clear"></div>
+						</div>	
+
+						<div id="titleh2">
+							<h2> The news, by Reddit</h2>
+
+						</div>
+
+						<div class="mainstream" id="toggle">
+							<a href="#">Or...GO<br/>
+							MAINSTREAM!</a>
+						</div>
+
+						<div id="nytlogo">
+
+							<img src="images/cardboardA.png">
+
+						</div>
+
+						<div id="top5news">
+
+				<p>The Reddit Edit is very good friends with <a href="http://www.top5news.co.uk" target="_blank" style="color: red">top5news.co.uk</a> and its American cousin <a href="http://www.top5news.net" target="_blank" style="color: red">top5news.net</a>, pulling in the most popular stories from across the UK & US media</p>
+
+				<a href="#"><img src="images/closebutton.png"></a>
+
+						</div>
+
+						
+
+
+						
+					</div>
+
+		</div>
+
+		<div id="buttons" class="container_12">
+
+			<div id="leftbutton">
+					<a href='#'><img src="images/leftbutton.png"></a>
+			</div>	
+
+			<div id="rightbutton">
+					<a href="#"><img src="images/rightbutton.png"></a>
+			</div>	
+			<div id="wantmore"> 
+				<a href="#"<p>News junky?</p></a>
+			</div>
+
+
+		</div>
+
+
+
+
+
+	<div id="contentwrapper" class="container_12">
+
+
+		
+		
+	<div id="items">
+
+		<figure class="front">
+
+				<ul>
+
+					<li>
+
+						<div id="grid1" class="grid_4">
+
+							<div id="gridtitle">
+							<a href="<%= Section.find(1).url %>" target="_blank"><h1><h2><%= Section.find(1).name %></h2></h1><p> /r/worldnews</p>
+							</div>
+							<% Section.find(1).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+							</div>
+					</li>
+					
+					<li>	
+
+						<div id="grid2" class="grid_4">
+							<div id="gridtitle">
+							<a href="<%= Section.find(2).url %>" target="_blank"><h1><h2><%= Section.find(2).name %></h2></h1><p> /r/politics</p>
+							</div>
+							<% Section.find(2).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+
+					</li>
+
+					<li>
+						<div id="grid3" class="grid_4">
+							<div id="gridtitle">
+							<a href="<%= Section.find(3).url %>" target="_blank"><h1><h2><%= Section.find(3).name %></h2></h1><p> /r/technology</p>
+							</div>
+							<% Section.find(3).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid4" class="grid_4">
+							<div id="gridtitle">
+							<a href="<%= Section.find(5).url %>" target="_blank"><h1><h2><%= Section.find(5).name %></h2></h1><p> /r/science</p>
+							</div>
+							<% Section.find(5).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>	
+					</li>
+
+					<li>
+						<div id="grid5" class="grid_4">
+							<div id="gridtitle">
+							<a href="<%= Section.find(6).url %>" target="_blank"><h1><h2><%= Section.find(6).name %></h2></h1><p> reddit.com</p>
+							</div>
+							<% Section.find(6).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid6" class="grid_4">
+							<div id="gridtitle">
+							<a href="<%= Section.find(7).url %>" target="_blank"><h1><h2><%= Section.find(7).name %></h2></h1><p> /r/pics</p>
+							</div>
+							<% Section.find(7).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+					
+
+				</ul>
+
+		</figure>	
+
+		<figure class="back" >
+
+			<ul>
+
+					<li>
+
+						<div id="grid1" class="grid_4">
+							<a href="<%= Section.find(13).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/nytlogo.png">
+							</div>
+							
+							</a>
+
+
+							<% Section.find(13).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+					
+					<li>	
+
+						
+							<div id="grid2" class="grid_4">
+							<a href="<%= Section.find(10).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/foxnews.png">
+							</div>
+							</a>
+							<% Section.find(10).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid3" class="grid_4">
+							<a href="<%= Section.find(12).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/huffpo.png">
+							</div>
+							</a>
+							<% Section.find(12).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid4" class="grid_4">
+							<a href="<%= Section.find(15).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/wsj.png">
+							</div>
+							</a>
+							<% Section.find(15).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid5" class="grid_4">
+							<a href="<%= Section.find(14).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/wapo.png">
+							</div>
+							</a>
+							<% Section.find(14).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+
+					<li>
+						<div id="grid5" class="grid_4">
+							<a href="<%= Section.find(9).url %>" target="_blank">
+							<div id="gridtitle">
+								<img src="images/buzzfeed.png">
+							</div>
+							</a>
+							<% Section.find(9).stories.each do |story| %>
+							<div id="story1">
+
+							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
+
+							<p></p></a>
+
+							<% end %>
+						</div>
+					</li>
+					
+
+				</ul>
+
+
+		</figure>	
+
+	</div> <!-- items  !-->
+
+</div>	<!-- content wrapper container  !-->
+
+
+
+
+
+
+
+
+	</div>
+</body>
