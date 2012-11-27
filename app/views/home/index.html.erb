@@ -187,7 +187,7 @@
 
 							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
 
-							<p></p></a>
+							<p><%= link_to story.source, story.url %></p></a>
 
 							<% end %>
 							</div>
@@ -204,7 +204,7 @@
 
 							<a class="storylink" href="#" target="_blank"><h2><%= link_to story.title, story.url %></h2>
 
-							<p></p></a>
+							<p><%= link_to story.source, story.url, target: "_blank" %></p></a>
 
 							<% end %>
 						</div>

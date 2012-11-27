@@ -1,34 +1,30 @@
 class Section < ActiveRecord::Base
-  attr_accessible :anchor, :name, :url, :source_anchor, :range
+  attr_accessible :anchor, :name, :url, :source_anchor, :range, :id
 
   has_many :stories
 
-    def get_content
+  def get_content
+    stories.each { |s| s.delete }
 
-    	range_value = "#{range}"
+    request = HTTParty.get(url)
 
-       	  self.stories.delete_all    
+    doc = Nokogiri::HTML(request.body)
+    r = eval(range)
 
-          request = HTTParty.get("#{url}")
+    doc.css(anchor)[r].each_with_index do |entry, index|
 
-          doc = Nokogiri::HTML(request.body)
-    
-       	 doc.css("#{anchor}")[eval(range)].each do |entry|
+	  	story = self.stories.new
+	  	story.title = entry.text
+	  	story.url = entry[:href]
+	  	
+      if (id.to_i < 8)
+        story.source = doc.css('#siteTable .domain a')[r.first + index].text
+      end #end of if statement
 
-	  		story = self.stories.new
-	  		story.title = entry.text
-	  		story.url = entry[:href]
-	  		story.save
+      story.save
 
-  		end
-                  
+   	end #end of first entry do loop
 
-    end
-
-
-
-  
-end
-
-
-	
+  end #end of function
+ 
+end #end of class
