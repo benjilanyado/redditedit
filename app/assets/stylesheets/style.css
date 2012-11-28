@@ -16,7 +16,7 @@
 	top: -155px;
 	font-size: 30px;
 	left: 340px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	width: 300px;
 }
 
@@ -25,7 +25,7 @@
 	margin-left: 90px;
 	margin-top:22px;
 	margin-bottom: 0;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 90px;
 }
 
@@ -224,7 +224,7 @@
 #items a {
 
 	text-decoration: none;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
@@ -244,7 +244,7 @@ h1 a{
 p {
 
 	font-size: 20px;
-	font-family:"Futura";
+	font-family:"futura-pt";
 	color: red;
 }
 
@@ -288,7 +288,7 @@ p {
 	color: black;
 	font-size: 24px;
 	text-decoration: none;
-	font-family:"Futura";
+	font-family:"futura-pt";
 
 }
 
@@ -362,7 +362,7 @@ p {
 
 #genassembly p {
 
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 	font-size: 16px;
 	text-decoration: none
@@ -372,7 +372,7 @@ p {
 
 	color: black;
 	text-decoration: none;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 23px;
 }
 
@@ -382,7 +382,7 @@ p {
 	top: 50px;
 	left: 10px;
 	width: 210px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 14px;
 	
 }
@@ -392,7 +392,7 @@ p {
 	position: absolute;
 	top: 250px;
 	left: 1160px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	display: none;
 }
 
@@ -410,7 +410,7 @@ p {
 	top: 50px;
 	left: 25%;
 	width: 600px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	background: white;
 	padding: 20px;
 	text-align: center;
@@ -488,7 +488,7 @@ p {
 	position: relative;
 	top: -200px;
 	left: 650px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: red;
 	line-height: 20px
 }
@@ -503,7 +503,7 @@ p {
  	position: absolute;
 	top: 160px;
 	left: 850px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: red;
 	line-height: 20px;
 	display: none
@@ -536,7 +536,7 @@ p {
 	padding-left: 60px;
 	font-size: 30px;
 	text-align: center;
-	font-family: "Futura";
+	font-family: "futura-pt";
 }
 
 #newarrow a {
@@ -625,14 +625,14 @@ p {
 	height: 100px;
 	margin: 20px auto;
 	text-align: center;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
 #lightboxcaption .commentslink {
 
 	font-size: 20px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
@@ -679,7 +679,7 @@ p {
 	font-size: 30px;
 	text-decoration: none;
 	color: black;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-weight: bold;
 
 }
