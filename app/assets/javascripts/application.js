@@ -117,7 +117,7 @@ function leftMainClick() {
             var mainstreamCurrent = 0
             $("#buttons2 .leftbutton").css({display:  "none"})
              $("#buttons2 .rightbutton").css({display:  "block"})
-             
+
 
           })
         })
@@ -134,9 +134,7 @@ function leftMainClick() {
  	$('#buttons .rightbutton').click(function(event) {
  		event.preventDefault();
 
-    
-
-    $("#items").animate({left:  "-3510" }, 1000, function(){ 
+    $("#items").animate({left:  "-3840" }, 1000, function(){ 
 
       if (screen.width>1024) {
 
@@ -151,11 +149,7 @@ function leftMainClick() {
     $("#newarrow").fadeIn()
     
     
-
-
- //
-
-  });
+ });
  
 
 

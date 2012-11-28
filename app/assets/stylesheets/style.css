@@ -26,7 +26,7 @@
 	margin-top:22px;
 	margin-bottom: 0;
 	font-family: "futura-pt";
-	font-size: 90px;
+	font-size: 100px;
 }
 
 
@@ -42,7 +42,7 @@
 #masthead .alien {
 
 	position: relative;
-	top: -173px;
+	top: -191px;
 	right: -650px;
 	height: 130px
 
@@ -157,7 +157,7 @@
 
 #items {
 
-	width: 4700px;
+	width: 5100px;
 	position:absolute;
 	left:-2870px;
 }
@@ -248,7 +248,10 @@ p {
 	color: red;
 }
 
+#buttons #buttons2 {
 
+	height: 100px;
+}
 
 #buttons img, #buttons2 img {
 
@@ -286,7 +289,7 @@ p {
 #wantmore a {
 
 	color: black;
-	font-size: 24px;
+	font-size: 20px;
 	text-decoration: none;
 	font-family:"futura-pt";
 
