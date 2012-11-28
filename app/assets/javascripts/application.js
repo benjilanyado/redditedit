@@ -16,49 +16,127 @@
 
 $(document).ready(function(){
 
+////
+
+  var mainstreamGrids = [  "0px", "-960px", "-1920px" ]
+  var mainstreamCurrent = 0;
+
+function rightMainClick() {
+
+  mainstreamCurrent += 1
+
+  $("#items").animate({"left": mainstreamGrids[mainstreamCurrent]}, 1000)
+  $("#buttons2 .leftbutton").fadeIn()
+
+  if (mainstreamCurrent==(mainstreamGrids.length -1)) {
+
+    $("#buttons2 .rightbutton").fadeOut()
+  }
+}
+
+function leftMainClick() {
+
+
+  mainstreamCurrent -= 1
+
+  $("#items").animate({"left": mainstreamGrids[mainstreamCurrent]}, 1000)
+
+  $("#buttons2 .rightbutton").fadeIn()
+
+  if (mainstreamCurrent==(mainstreamGrids.length - 3)) {  //NB  "-5" needs to be whatever length of array is
+
+    $("#buttons2 .leftbutton").fadeOut()
+  }
+
+
+}
+
+  $("#buttons2 .rightbutton").click(function(event) {        
+
+    event.preventDefault();
+
+    rightMainClick()
+
+  });
+
+
+  $("#buttons2 .leftbutton").click(function(event) {        
+
+    event.preventDefault();
+
+    leftMainClick()
+
+  });
+
+///////
+
 
 
 
   $("#toggle").click(function(event) {
 
-    
-
-        $("#back").addClass("back");
-    $("#titleh2").fadeOut(function(){
-
-      $("#nytlogo img").css({"display": "inline"}).animate({"top": "-150px"}, 800)
-    });
-
-
-
+  
+    $("#titleh2").fadeOut()
+    $("#nytlogo img").css({display:  "inline"}).animate({top:  "-150px"}, 800)
     $('#masthead .alien').fadeOut(function(){ 
      $('#gaps').fadeOut(function(){$("#letteri").fadeIn(function(){
-      $("#items").addClass("flipped")
+      $("#items").animate({left:  "0" }, 1000)
 
-     })
-     ;})
+        $("#toggle2").fadeIn()
+      
+
+            });
+          })
         });
-
-    $("#top5news").css({"top": "-420px"});
-
-    $(".mainstream").fadeOut()
-
-    // $("#items").toggleClass("flipped")
-
-
-
+    $("#top5news").css({top:  "-420px"});
+    $("#buttons").css({display:  "none"})
+    $("#buttons2").css({display:  "block"})
+    $("#toggle").fadeOut()
+    var mainstreamCurrent = 0
+    $("#buttons .leftbutton").css({display:  "none"})
+    $("#buttons .rightbutton").css({display:  "block"})
 
 
-//$('#gaps').fadeOut('fast', function(){ 
- //  $('#titleh2').fadeOut();
-//});
 
 });
 
+  $("#toggle2").click(function(event) {
+    $("#wantmore").css({display:  "none"})
+    $("#buttons").css({display:  "block"})
+    $("#buttons2").css({display:  "none"})
+  $("#toggle2").fadeOut()
+    $("#letteri").fadeOut(function(){
 
- 	$('#rightbutton').click(function(event) {
+      $("#gaps").fadeIn(function() {
+
+        $('#masthead .alien').fadeIn(function(){
+
+          $("#titleh2").fadeIn(function(){
+
+            $("#toggle").fadeIn()
+            var mainstreamCurrent = 0
+            $("#buttons2 .leftbutton").css({display:  "none"})
+             $("#buttons2 .rightbutton").css({display:  "block"})
+             
+
+          })
+        })
+      })
+    })
+
+ 
+    $("#nytlogo img").animate({top:"70px"}, 800, function(){
+      $("#nytlogo img").css({display:  "none"}) 
+      $("#items").animate({left:  "-2870px" }, 1000)
+        });
+     });
+
+ 	$('#buttons .rightbutton').click(function(event) {
  		event.preventDefault();
-    $("#items").animate({"left": "-960" }, 1000, function(){ 
+
+    
+
+    $("#items").animate({left:  "-3510" }, 1000, function(){ 
 
       if (screen.width>1024) {
 
@@ -67,12 +145,11 @@ $(document).ready(function(){
     }
 
     });
-    $("#leftbutton").fadeIn();
-    $("#rightbutton").fadeOut();
+    $("#buttons .leftbutton").fadeIn();
+    $("#buttons .rightbutton").fadeOut();
     $("#wantmore").fadeIn();
-    $("#items").css({"width": "1920px"});
-    $("#grid4, #grid5, #grid6").css({"display": "inline"})
     $("#newarrow").fadeIn()
+    
     
 
 
@@ -83,16 +160,16 @@ $(document).ready(function(){
 
 
 
- 	$('#leftbutton').click(function(event) {
+ 	$('#buttons .leftbutton').click(function(event) {
  		event.preventDefault();
-    $("#items").animate({"left": "0" }, 1000, function(){
-      $("#items").css({"width": "960px"})
-    });
-    $("#rightbutton").fadeIn();
-    $("#leftbutton").fadeOut();
-    $("#wantmore").fadeOut(function(){$("#grid4, #grid5, #grid6").css({"display": "none"})});
+    $("#items").animate({left:  "-2870px" }, 1000)
+    $("#buttons .rightbutton").fadeIn();
+    $("#buttons .leftbutton").fadeOut();
+    $("#wantmore").fadeOut();
     $("#newarrow").fadeOut()
     $("#lightabout").fadeOut()
+
+
 
   });
 
@@ -173,33 +250,33 @@ $("#newscoverage img").click(function(event){
 
 
 
-$.getJSON("http://www.reddit.com/r/pics.json?jsonp=?",
-    function(data) {
+// $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?,
+//     function(data) {
 
-      if(!data.data.children[0].data.url.match(/\.jpg$/)){  //this is all for the first image
-      data.data.children[0].data.url += '.jpg';
-      }
+//       if(!data.data.children[0].data.url.match(/\.jpg$/)){  //this is all for the first image
+//       data.data.children[0].data.url += '.jpg';
+//       }
 
   
-      $("#lightboxpic img").attr("src", data.data.children[0].data.url);
-      $("#lightboxpic a").attr("href", data.data.children[0].data.url);
-      $("#lightboxcaption h2").html(data.data.children[0].data.title + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>' );
-      $("#lightboxcaption a.imagelink").attr("href", ("http://www.reddit.com" + data.data.children[0].data.permalink))
-      $("img").error(function () {
-            $(this).unbind("error").attr("src", "images/error.png");
-            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
-          });
+//       $("#lightboxpic img").attr("src, data.data.children[0].data.url);
+//       $("#lightboxpic a").attr("href, data.data.children[0].data.url);
+//       $("#lightboxcaption h2").html(data.data.children[0].data.title + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>' );
+//       $("#lightboxcaption a.imagelink").attr("href, ("http://www.reddit.com" + data.data.children[0].data.permalink))
+//       $("img").error(function () {
+//             $(this).unbind("error").attr("src, "images/error.png");
+//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
+//           });
         
 
 
-});
+// // });
 
 
 
 
-$("#slideshowlink img, #newarrow h2").click(function(event) {
+// $("#slideshowlink img, #newarrow h2").click(function(event) {
 
-  $("#lightbox, #lightboxwrapper").fadeIn(function(){
+//   $("#lightbox, #lightboxwrapper").fadeIn(function(){
 
 
 
@@ -207,23 +284,23 @@ $("#slideshowlink img, #newarrow h2").click(function(event) {
 
  //this is all executing as a callback of the fadeIn function
 
-  $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?",
-    function(data) {
-       var lightboximages = [];
-       for (var i=0; i<data.data.children.slice(0, 10).length; i++) {
-           var child = data.data.children[i];
+  // $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?,
+  //   function(data) {
+  //      var lightboximages = [];
+  //      for (var i=0; i<data.data.children.slice(0, 10).length; i++) {
+  //          var child = data.data.children[i];
           
 
-            if(!child.data.url.match(/\.jpg$/)){  //this bit adds a .jpg to the src if there isn't one already
-      child.data.url += '.jpg'}
+  //           if(!child.data.url.match(/\.jpg$/)){  //this bit adds a .jpg to the src if there isn't one already
+  //     child.data.url += '.jpg'}
 
 
 
-           var lightboxObj = {"src":child.data.url, "caption":child.data.title, "comments":"http://reddit.com" + child.data.permalink};
-           lightboximages.push(lightboxObj);
+  //          var lightboxObj = {src: child.data.url, caption: child.data.title, comments: "http://reddit.com" + child.data.permalink};
+  //          lightboximages.push(lightboxObj);
 
-            //this for if the imgur.url is a gallery
-       }
+  //           //this for if the imgur.url is a gallery
+  //      }
        
 
        //now we call the rest of the functionality
@@ -237,103 +314,103 @@ $("#slideshowlink img, #newarrow h2").click(function(event) {
     
     
 
-var lightboxCurrent = 0;
+// var lightboxCurrent = 0;
 
-function lightboxRight() {
+// function lightboxRight() {
   
-  lightboxCurrent += 1
+//   lightboxCurrent += 1
 
-  if (lightboxCurrent>=lightboximages.length)
-  { 
-    lightboxCurrent = 0
-  }
-
-  
-  
-    $("#lightboxpic img").attr("src", lightboximages[lightboxCurrent].src);
-    $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].src);
-    $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
-    $("#lightboxcaption a.imagelink").attr("href", lightboximages[lightboxCurrent].comments);
-    $("img").error(function () {
-            $(this).unbind("error").attr("src", "images/error.png");
-            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
-          });
-
-}
-
-$("#lightboxcontrolRight").click(function(event){
-  event.preventDefault();
-  event.stopPropagation();
-
-
-  lightboxRight();
-});
-
-
-function lightboxLeft() {
-
-  if (lightboxCurrent==0) {
-
-    lightboxCurrent = lightboximages.length
-  }
-  
-  lightboxCurrent -=1;
-
-    $("#lightboxpic img").attr("src", lightboximages[lightboxCurrent].src);
-    $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].src);
-    $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
-    $("#lightboxcaption a.imagelink").attr("href", lightboximages[lightboxCurrent].comments);
-    $("img").error(function () {
-            $(this).unbind("error").attr("src", "images/error.png");
-            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
-          });
-
-}
-
-
-$("#lightboxcontrolLeft").click(function(event){
-  event.preventDefault();
-  event.stopPropagation();
+//   if (lightboxCurrent>=lightboximages.length)
+//   { 
+//     lightboxCurrent = 0
+//   }
 
   
-  lightboxLeft();
-});
+  
+//     $("#lightboxpic img").attr("src, lightboximages[lightboxCurrent].src);
+//     $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].src);
+//     $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
+//     $("#lightboxcaption a.imagelink").attr("href, lightboximages[lightboxCurrent].comments);
+//     $("img").error(function () {
+//             $(this).unbind("error").attr("src, "images/error.png");
+//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
+//           });
 
-$("#lightbox").click(function(event){
+// }
 
-event.stopPropagation()
-
-});
-
-}); // this is the end of the Interior function
-
-
-
-
-}); /// this is the end of the LOOP function... NB all lightobx stuff is a callback
-
-}); //THIS IS THE END OF THE FADE IN
+// $("#lightboxcontrolRight").click(function(event){
+//   event.preventDefault();
+//   event.stopPropagation();
 
 
-//now some stuff that doesn't need to be in there
-
-$("#closebutton").click(function(event){
-
-  event.preventDefault();
-
-  $("#lightbox").fadeOut();
-  $("#lightboxwrapper").fadeOut();
+//   lightboxRight();
+// });
 
 
-});
+// function lightboxLeft() {
 
-$("#lightboxwrapper").click(function(event){
+//   if (lightboxCurrent==0) {
+
+//     lightboxCurrent = lightboximages.length
+//   }
+  
+//   lightboxCurrent -=1;
+
+//     $("#lightboxpic img").attr("src, lightboximages[lightboxCurrent].src);
+//     $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].src);
+//     $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
+//     $("#lightboxcaption a.imagelink").attr("href, lightboximages[lightboxCurrent].comments);
+//     $("img").error(function () {
+//             $(this).unbind("error").attr("src, "images/error.png");
+//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
+//           });
+
+// }
 
 
-  $("#lightbox").fadeOut();
-  $("#lightboxwrapper").fadeOut();
+// $("#lightboxcontrolLeft").click(function(event){
+//   event.preventDefault();
+//   event.stopPropagation();
 
-});
+  
+//   lightboxLeft();
+// });
+
+// $("#lightbox").click(function(event){
+
+// event.stopPropagation()
+
+// });
+
+// }); // this is the end of the Interior function
+
+
+
+
+// }); /// this is the end of the LOOP function... NB all lightobx stuff is a callback
+
+// }); //THIS IS THE END OF THE FADE IN
+
+
+// //now some stuff that doesn't need to be in there
+
+// $("#closebutton").click(function(event){
+
+//   event.preventDefault();
+
+//   $("#lightbox").fadeOut();
+//   $("#lightboxwrapper").fadeOut();
+
+
+// });
+
+// $("#lightboxwrapper").click(function(event){
+
+
+//   $("#lightbox").fadeOut();
+//   $("#lightboxwrapper").fadeOut();
+
+// });
 
 
 

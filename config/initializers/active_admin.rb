@@ -144,6 +144,6 @@ ActiveAdmin.setup do |config|
 
   # == CSV options
   #
-  # Set the CSV builder separator (default is ",")
+  # Set the CSV builder separator (default is ,")
   # config.csv_column_separator = ','
 end

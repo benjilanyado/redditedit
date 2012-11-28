@@ -95,7 +95,7 @@
 	padding: 10px 0px;
 }
 
-#grid1 {
+#grid1, #grid7, #grid13 {
 	
 	margin-top: 10px;
 	float: left;
@@ -104,7 +104,7 @@
 
 }
 
-#grid2 {
+#grid2, #grid8, #grid14 {
 
 	
 	height: inherit;
@@ -113,7 +113,7 @@
 	background: rgb(255, 252, 221);
 }
 
-#grid3 {
+#grid3, #grid9, #grid15 {
 
 	
 	height: inherit;
@@ -122,7 +122,7 @@
 	background: rgb(255, 216, 216);
 }
 
-#grid4 {
+#grid4, #grid10 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -133,7 +133,7 @@
 
 }
 
-#grid5 {
+#grid5, #grid11 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -144,7 +144,7 @@
 
 }
 
-#grid6 {
+#grid6, #grid12 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -157,9 +157,9 @@
 
 #items {
 
-	width: 960px;
+	width: 4700px;
 	position:absolute;
-	left:0;
+	left:-2870px;
 }
 
 #items p a {
@@ -250,21 +250,28 @@ p {
 
 
 
-#buttons img {
+#buttons img, #buttons2 img {
 
 	width: 70px;
 
 }
 
-#leftbutton {
+.leftbutton {
 
 	float:left;
 	display:none;
 }
 
-#rightbutton {
+.rightbutton {
 
 	float:right;
+}
+
+
+
+#buttons2 {
+
+	display: none
 }
 
 #wantmore {
@@ -476,7 +483,7 @@ p {
   }
 
 
-.mainstream {
+#toggle {
 
 	position: relative;
 	top: -200px;
@@ -486,92 +493,30 @@ p {
 	line-height: 20px
 }
 
-.mainstream a {
+#toggle a, #toggle2 a {
 	text-decoration: none;
 	color: red;
+}
+
+ #toggle2 {
+
+ 	position: absolute;
+	top: 160px;
+	left: 850px;
+	font-family: "Futura";
+	color: red;
+	line-height: 20px;
+	display: none
+}
+
+#toggle {
+
+	display: inline;
 }
 
 
 
 /* transitions */
-
-
-
-#grid4, #grid5, #grid6 {
-
-	display: none;
-}
-
-#contentwrapper {
-
-	
-	position: relative;
-	-webkit-perspective: 10000;
-         -moz-perspective: 10000;
-           -o-perspective: 10000;
-              perspective: 10000;
-}
-
-#items {
-
-      position: absolute;
-      
-
-      -webkit-transition: -webkit-transform 1s;
-         -moz-transition: -moz-transform 1s;
-           -o-transition: -o-transform 1s;
-              transition: transform 1s;
-
-      -webkit-transform-style: preserve-3d;
-         -moz-transform-style: preserve-3d;
-           -o-transform-style: preserve-3d;
-              transform-style: preserve-3d;
-
-              -webkit-backface-visibility: hidden;
-         -moz-backface-visibility: hidden;
-           -o-backface-visibility: hidden;
-              backface-visibility: hidden;
-
-           
-
-}
-
-#items.flipped {
-
-	-webkit-backface-visibility: hidden;
-         -moz-backface-visibility: hidden;
-           -o-backface-visibility: hidden;
-              backface-visibility: hidden;
-      -webkit-transform: rotateY( -180deg );
-         -moz-transform: rotateY( -180deg );
-           -o-transform: rotateY( -180deg );
-              transform: rotateY( -180deg );
-
-          }
-
-#items figure {
-      display: block;
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      
-      position: absolute;
-      -webkit-backface-visibility: hidden;
-         -moz-backface-visibility: hidden;
-           -o-backface-visibility: hidden;
-              backface-visibility: hidden;
-    }
-
-
-#items .back {
-
-
-      -webkit-transform: rotateY( -180deg );
-         -moz-transform: rotateY( -180deg );
-           -o-transform: rotateY( -180deg );
-              transform: rotateY( -180deg );
-    }
-
 
 
 
