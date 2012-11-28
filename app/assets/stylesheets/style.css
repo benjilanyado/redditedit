@@ -13,7 +13,7 @@
 #titleh2 {
 
 	position: relative;
-	top: -155px;
+	top: -175px;
 	font-size: 30px;
 	left: 340px;
 	font-family: "futura-pt";
@@ -160,6 +160,7 @@
 	width: 5100px;
 	position:absolute;
 	left:-2870px;
+	padding-top: 20px;
 }
 
 #items p a {
@@ -489,7 +490,7 @@ p {
 #toggle {
 
 	position: relative;
-	top: -200px;
+	top: -220px;
 	left: 650px;
 	font-family: "futura-pt";
 	color: red;

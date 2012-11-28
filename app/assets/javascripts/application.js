@@ -77,7 +77,7 @@ function leftMainClick() {
 
   
     $("#titleh2").fadeOut()
-    $("#nytlogo img").css({display:  "inline"}).animate({top:  "-150px"}, 800)
+    $("#nytlogo img").css({display:  "inline"}).animate({top:  "-170px"}, 800)
     $('#masthead .alien').fadeOut(function(){ 
      $('#gaps').fadeOut(function(){$("#letteri").fadeIn(function(){
       $("#items").animate({left:  "0" }, 1000)
