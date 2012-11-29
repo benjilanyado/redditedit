@@ -720,11 +720,16 @@ h1 a{
 		float: center;
 	}
 
-	#mobileheader, #contentwrapper, #items, #content  {
+	#contentwrapper, #items, #content  {
 
 		display: block;
 		width: 100%;
 		overflow: inherit;
+	}
+
+	#mobileheader {
+
+		width: 350px;
 	}
 
 	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
