@@ -76,9 +76,10 @@ function leftMainClick() {
   $("#toggle").click(function(event) {
 
   
-    $("#titleh2").fadeOut()
+     $("#titleh2").fadeOut()
     $("#nytlogo img").css({display:  "inline"}).animate({top:  "-170px"}, 800)
     $('#masthead .alien').fadeOut(function(){ 
+
      $('#gaps').fadeOut(function(){$("#letteri").fadeIn(function(){
       $("#items").animate({left:  "0" }, 1000)
 
