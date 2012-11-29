@@ -393,22 +393,6 @@ h1 a{
 	
 }
 
-#lightabout {
-
-	position: absolute;
-	top: 250px;
-	left: 1160px;
-	font-family: "futura-pt";
-	display: none;
-}
-
-#lightaboutcopy {
-
-	position: relative;
-	width: 110px;
-	top: 5px;
-	left: 10px;
-}
 
 #about {
 
@@ -769,12 +753,9 @@ h1 a{
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 
-#lightabout {
+	
 
-	display: none;
-}	
-
-#genassembly, #lightabout, #interactive {
+#genassembly, #interactive {
 
 	display: none;
 }
