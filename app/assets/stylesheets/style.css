@@ -98,6 +98,7 @@
 #gridtitle img {
 
 	padding: 10px 0px;
+	width: 200px;
 }
 
 #grid1, #grid7, #grid13 {
@@ -189,7 +190,7 @@
 
 	width: 5100px;
 	position:absolute;
-	left: -2870px;
+	left: 0px;
 }
 
 #items p a {
@@ -783,7 +784,7 @@ and (max-width : 1024px) {
 
 	
 
-#genassembly, #interactive {
+#genassembly, #interactive, #aboutlink {
 
 	display: none;
 }
