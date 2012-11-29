@@ -93,7 +93,7 @@ function leftMainClick() {
     $("#buttons").css({display:  "none"})
     $("#buttons2").css({display:  "block"})
     $("#toggle").fadeOut()
-    var mainstreamCurrent = 0
+     mainstreamCurrent = 0
     $("#buttons .leftbutton").css({display:  "none"})
     $("#buttons .rightbutton").css({display:  "block"})
 
@@ -115,7 +115,7 @@ function leftMainClick() {
           $("#titleh2").fadeIn(function(){
 
             $("#toggle").fadeIn()
-            var mainstreamCurrent = 0
+             mainstreamCurrent = 0
             $("#buttons2 .leftbutton").css({display:  "none"})
              $("#buttons2 .rightbutton").css({display:  "block"})
 
