@@ -480,12 +480,14 @@ h1 a{
 	left: 650px;
 	font-family: "futura-pt";
 	color: red;
-	line-height: 20px
+	font-weight: bold;
+	
 }
 
 #toggle a, #toggle2 a {
 	text-decoration: none;
 	color: red;
+
 }
 
  #toggle2 {
@@ -503,6 +505,14 @@ h1 a{
 
 	display: inline;
 }
+
+#toggle img {
+
+	width: 40px;
+	position: absolute;
+	top: -15px;
+	left: 60px;
+} 
 
 
 
