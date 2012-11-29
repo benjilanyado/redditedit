@@ -16,7 +16,7 @@
 	top: -175px;
 	font-size: 30px;
 	left: 340px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	width: 300px;
 }
 
@@ -25,7 +25,7 @@
 	margin-left: 90px;
 	margin-top:22px;
 	margin-bottom: 0;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 100px;
 }
 
@@ -171,7 +171,7 @@
 #items p {
 
 	font-size: 20px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-weight: normal;
 	padding-bottom: 10px;
 }
@@ -193,7 +193,7 @@
 	color: black;
 	font-size: 15px;
 	padding-bottom: 15px;
-	font-family: "Futura" ;
+	font-family: "futura-pt" ;
 }
 
 .back #gridtitle {
@@ -224,13 +224,13 @@
 #items a {
 
 	text-decoration: none;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
 #items h2 {
 
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 25px;
 	padding: 10px;
 	color: black;
@@ -294,7 +294,7 @@ h1 a{
 	color: black;
 	font-size: 20px;
 	text-decoration: none;
-	font-family:"Futura";
+	font-family:"futura-pt";
 
 }
 
@@ -368,7 +368,7 @@ h1 a{
 
 #genassembly p {
 
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 	font-size: 16px;
 	text-decoration: none
@@ -378,7 +378,7 @@ h1 a{
 
 	color: black;
 	text-decoration: none;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 23px;
 }
 
@@ -388,7 +388,7 @@ h1 a{
 	top: 50px;
 	left: 10px;
 	width: 210px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-size: 14px;
 	
 }
@@ -398,7 +398,7 @@ h1 a{
 	position: absolute;
 	top: 250px;
 	left: 1160px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	display: none;
 }
 
@@ -416,7 +416,7 @@ h1 a{
 	top: 50px;
 	left: 25%;
 	width: 600px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	background: white;
 	padding: 20px;
 	text-align: center;
@@ -494,7 +494,7 @@ h1 a{
 	position: relative;
 	top: -220px;
 	left: 650px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: red;
 	line-height: 20px
 }
@@ -509,7 +509,7 @@ h1 a{
  	position: absolute;
 	top: 160px;
 	left: 850px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: red;
 	line-height: 20px;
 	display: none
@@ -542,7 +542,7 @@ h1 a{
 	padding-left: 60px;
 	font-size: 30px;
 	text-align: center;
-	font-family: "Futura";
+	font-family: "futura-pt";
 }
 
 #newarrow a {
@@ -631,14 +631,14 @@ h1 a{
 	height: 100px;
 	margin: 20px auto;
 	text-align: center;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
 #lightboxcaption .commentslink {
 
 	font-size: 20px;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	color: black;
 }
 
@@ -685,7 +685,7 @@ h1 a{
 	font-size: 30px;
 	text-decoration: none;
 	color: black;
-	font-family: "Futura";
+	font-family: "futura-pt";
 	font-weight: bold;
 
 }
