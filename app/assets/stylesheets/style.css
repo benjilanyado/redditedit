@@ -503,7 +503,7 @@ h1 a{
 
  #toggle2 {
 
- 	position: absolute;
+ 	position: relative;
 	top: 160px;
 	left: 865px;
 	font-family: "futura-pt";
@@ -786,6 +786,11 @@ and (max-width : 1024px) {
 #genassembly, #interactive {
 
 	display: none;
+}
+
+#aboutlink {
+
+	position: absolute;
 }
 
 
