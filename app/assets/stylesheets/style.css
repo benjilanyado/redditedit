@@ -503,7 +503,7 @@ h1 a{
 
  #toggle2 {
 
- 	position: relative;
+ 	position: absolute;
 	top: 160px;
 	left: 865px;
 	font-family: "futura-pt";
@@ -788,9 +788,10 @@ and (max-width : 1024px) {
 	display: none;
 }
 
-#aboutlink {
+#toggle2 {
 
-	position: absolute;
+	width: 200px;
+	left:665px;
 }
 
 
