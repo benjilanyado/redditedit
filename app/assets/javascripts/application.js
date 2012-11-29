@@ -242,37 +242,38 @@ $("#newscoverage img").click(function(event){
 
 });
 
+/// LIGHTBOX
 ///// LIGHTBOX
 
 
 
-// $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?,
-//     function(data) {
+$.getJSON("http://www.reddit.com/r/pics.json?jsonp=?",
+    function(data) {
 
-//       if(!data.data.children[0].data.url.match(/\.jpg$/)){  //this is all for the first image
-//       data.data.children[0].data.url += '.jpg';
-//       }
+      if(!data.data.children[0].data.url.match(/\.jpg$/)){  //this is all for the first image
+      data.data.children[0].data.url += '.jpg';
+      }
 
   
-//       $("#lightboxpic img").attr("src, data.data.children[0].data.url);
-//       $("#lightboxpic a").attr("href, data.data.children[0].data.url);
-//       $("#lightboxcaption h2").html(data.data.children[0].data.title + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>' );
-//       $("#lightboxcaption a.imagelink").attr("href, ("http://www.reddit.com" + data.data.children[0].data.permalink))
-//       $("img").error(function () {
-//             $(this).unbind("error").attr("src, "images/error.png");
-//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
-//           });
+      $("#lightboxpic img").attr("src", data.data.children[0].data.url);
+      $("#lightboxpic a").attr("href", data.data.children[0].data.url);
+      $("#lightboxcaption h2").html(data.data.children[0].data.title + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>' );
+      $("#lightboxcaption a.imagelink").attr("href", ("http://www.reddit.com" + data.data.children[0].data.permalink))
+      $("img").error(function () {
+            $(this).unbind("error").attr("src", "images/error.png");
+            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
+          });
         
 
 
-// // });
+});
 
 
 
 
-// $("#slideshowlink img, #newarrow h2").click(function(event) {
+$("#slideshowlink img, #newarrow h2").click(function(event) {
 
-//   $("#lightbox, #lightboxwrapper").fadeIn(function(){
+  $("#lightbox, #lightboxwrapper").fadeIn(function(){
 
 
 
@@ -280,23 +281,23 @@ $("#newscoverage img").click(function(event){
 
  //this is all executing as a callback of the fadeIn function
 
-  // $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?,
-  //   function(data) {
-  //      var lightboximages = [];
-  //      for (var i=0; i<data.data.children.slice(0, 10).length; i++) {
-  //          var child = data.data.children[i];
+  $.getJSON("http://www.reddit.com/r/pics.json?jsonp=?",
+    function(data) {
+       var lightboximages = [];
+       for (var i=0; i<data.data.children.slice(0, 10).length; i++) {
+           var child = data.data.children[i];
           
 
-  //           if(!child.data.url.match(/\.jpg$/)){  //this bit adds a .jpg to the src if there isn't one already
-  //     child.data.url += '.jpg'}
+            if(!child.data.url.match(/\.jpg$/)){  //this bit adds a .jpg to the src if there isn't one already
+      child.data.url += '.jpg'}
 
 
 
-  //          var lightboxObj = {src: child.data.url, caption: child.data.title, comments: "http://reddit.com" + child.data.permalink};
-  //          lightboximages.push(lightboxObj);
+           var lightboxObj = {"src":child.data.url, "caption":child.data.title, "comments":"http://reddit.com" + child.data.permalink};
+           lightboximages.push(lightboxObj);
 
-  //           //this for if the imgur.url is a gallery
-  //      }
+            //this for if the imgur.url is a gallery
+       }
        
 
        //now we call the rest of the functionality
@@ -310,104 +311,103 @@ $("#newscoverage img").click(function(event){
     
     
 
-// var lightboxCurrent = 0;
+var lightboxCurrent = 0;
 
-// function lightboxRight() {
+function lightboxRight() {
   
-//   lightboxCurrent += 1
+  lightboxCurrent += 1
 
-//   if (lightboxCurrent>=lightboximages.length)
-//   { 
-//     lightboxCurrent = 0
-//   }
-
-  
-  
-//     $("#lightboxpic img").attr("src, lightboximages[lightboxCurrent].src);
-//     $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].src);
-//     $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
-//     $("#lightboxcaption a.imagelink").attr("href, lightboximages[lightboxCurrent].comments);
-//     $("img").error(function () {
-//             $(this).unbind("error").attr("src, "images/error.png");
-//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
-//           });
-
-// }
-
-// $("#lightboxcontrolRight").click(function(event){
-//   event.preventDefault();
-//   event.stopPropagation();
-
-
-//   lightboxRight();
-// });
-
-
-// function lightboxLeft() {
-
-//   if (lightboxCurrent==0) {
-
-//     lightboxCurrent = lightboximages.length
-//   }
-  
-//   lightboxCurrent -=1;
-
-//     $("#lightboxpic img").attr("src, lightboximages[lightboxCurrent].src);
-//     $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].src);
-//     $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
-//     $("#lightboxcaption a.imagelink").attr("href, lightboximages[lightboxCurrent].comments);
-//     $("img").error(function () {
-//             $(this).unbind("error").attr("src, "images/error.png");
-//             $("#lightboxpic a").attr("href, lightboximages[lightboxCurrent].comments)
-//           });
-
-// }
-
-
-// $("#lightboxcontrolLeft").click(function(event){
-//   event.preventDefault();
-//   event.stopPropagation();
+  if (lightboxCurrent>=lightboximages.length)
+  { 
+    lightboxCurrent = 0
+  }
 
   
-//   lightboxLeft();
-// });
+  
+    $("#lightboxpic img").attr("src", lightboximages[lightboxCurrent].src);
+    $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].src);
+    $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
+    $("#lightboxcaption a.imagelink").attr("href", lightboximages[lightboxCurrent].comments);
+    $("img").error(function () {
+            $(this).unbind("error").attr("src", "images/error.png");
+            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
+          });
 
-// $("#lightbox").click(function(event){
+}
 
-// event.stopPropagation()
-
-// });
-
-// }); // this is the end of the Interior function
-
-
-
-
-// }); /// this is the end of the LOOP function... NB all lightobx stuff is a callback
-
-// }); //THIS IS THE END OF THE FADE IN
+$("#lightboxcontrolRight").click(function(event){
+  event.preventDefault();
+  event.stopPropagation();
 
 
-// //now some stuff that doesn't need to be in there
-
-// $("#closebutton").click(function(event){
-
-//   event.preventDefault();
-
-//   $("#lightbox").fadeOut();
-//   $("#lightboxwrapper").fadeOut();
+  lightboxRight();
+});
 
 
-// });
+function lightboxLeft() {
 
-// $("#lightboxwrapper").click(function(event){
+  if (lightboxCurrent==0) {
+
+    lightboxCurrent = lightboximages.length
+  }
+  
+  lightboxCurrent -=1;
+
+    $("#lightboxpic img").attr("src", lightboximages[lightboxCurrent].src);
+    $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].src);
+    $("#lightboxp h2").html(lightboximages[lightboxCurrent].caption + '<span id="redditcomments">&nbsp&nbsp[Reddit comments]</span>') ;
+    $("#lightboxcaption a.imagelink").attr("href", lightboximages[lightboxCurrent].comments);
+    $("img").error(function () {
+            $(this).unbind("error").attr("src", "images/error.png");
+            $("#lightboxpic a").attr("href", lightboximages[lightboxCurrent].comments)
+          });
+
+}
 
 
-//   $("#lightbox").fadeOut();
-//   $("#lightboxwrapper").fadeOut();
+$("#lightboxcontrolLeft").click(function(event){
+  event.preventDefault();
+  event.stopPropagation();
 
-// });
+  
+  lightboxLeft();
+});
 
+$("#lightbox").click(function(event){
+
+event.stopPropagation()
+
+});
+
+}); // this is the end of the Interior function
+
+
+
+
+}); /// this is the end of the LOOP function... NB all lightobx stuff is a callback
+
+}); //THIS IS THE END OF THE FADE IN
+
+
+//now some stuff that doesn't need to be in there
+
+$("#closebutton").click(function(event){
+
+  event.preventDefault();
+
+  $("#lightbox").fadeOut();
+  $("#lightboxwrapper").fadeOut();
+
+
+});
+
+$("#lightboxwrapper").click(function(event){
+
+
+  $("#lightbox").fadeOut();
+  $("#lightboxwrapper").fadeOut();
+
+});
 
 
 //             _________     _______           _______ _________ _______ 

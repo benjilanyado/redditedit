@@ -459,7 +459,12 @@
 					<li>
 						<div id="grid6" class="grid_4">
 							<div id="gridtitle">
-							<a href="<%= Section.find(7).url %>" target="_blank"><h1><h2><%= Section.find(7).name %></h2></h1><p> /r/pics</p>
+								<div id="picstitle">
+									<a href="<%= Section.find(7).url %>" target="_blank"><h1><h2><%= Section.find(7).name %></h2></h1><p> /r/pics</p>
+								</div>
+								<div id="slideshowlink" >
+									<a href="#"><img src="images/slideshow.png"></a>
+								</div>	
 							</div>
 							<% Section.find(7).stories.each do |story| %>
 							<div id="story1">

@@ -184,7 +184,7 @@
 
 	width: 5100px;
 	position:absolute;
-	left: -2870px;
+	left: -3840px;
 }
 
 #items p a {
@@ -553,19 +553,20 @@ h1 a{
 #picstitle {
 
 	float: left;
+	padding-left: 80px;
 }
 
 #slideshowlink {
 
 	float: right;
-	padding-top: 20px;
-	padding-right: 10px;
+	padding-top: 7px;
+	padding-right: 40px;
 	color: red;
 }
 
 #slideshowlink img {
 
-	width: 50px;
+	width: 60px;
 }
 
 #slideshowlink p {
