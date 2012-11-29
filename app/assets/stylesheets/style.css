@@ -734,6 +734,11 @@ h1 a{
 		margin-bottom: 10px;
 	}
 
+	#grid7, #grid8, #grid9, #grid10, #grid11, #grid12, #grid13, #grid14, #grid15 {
+
+		display: none;
+	}
+
 
 	#contentwrapper {
 
