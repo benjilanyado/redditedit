@@ -155,22 +155,22 @@
 
 }
 
-#grid11 #gridtitle .img {
+#grid11 #gridtitle img {
 
 	padding-top: 35px;
 }
 
-#grid12 #gridtitle .img {
+#grid12 #gridtitle img {
 
 	padding-top: 30px;
 }
 
-#grid13 #gridtitle .img, #grid14 #gridtitle .img  {
+#grid13 #gridtitle img, #grid14 #gridtitle img  {
 
 	padding-top: 20px;
 }
 
-#grid15 #gridtitle .img {
+#grid15 #gridtitle img {
 
 	padding-top: 25px
 }
