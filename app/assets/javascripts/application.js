@@ -96,6 +96,7 @@ function leftMainClick() {
      mainstreamCurrent = 0
     $("#buttons .leftbutton").css({display:  "none"})
     $("#buttons .rightbutton").css({display:  "block"})
+    $("#top5news").fadeOut()
 
 
 
