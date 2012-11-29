@@ -702,11 +702,12 @@ h1 a{
 
 /*MEDIA QUERIES */
 
-@media (max-device-width: 480px) {
+@media (max-width: 480px) {
 
 	#items {
 
 		left: 0px;
+		margin: 0px;
 	}
 
 
@@ -727,7 +728,7 @@ h1 a{
 		overflow: inherit;
 	}
 
-	#wrapper {
+	#wrapper, body {
 
 		width: 400px;
 	}
