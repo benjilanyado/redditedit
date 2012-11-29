@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RedditEdit</title>
+  <title>The Reddit Edit - The News, by Reddit</title>
+  <meta name="description" content="The news, by Reddit - regularly updated with the most popular stories, images and videos from across the web">
   <meta charset="utf-8" />
   <meta name="viewport"  content="width=device-width" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -14,6 +15,19 @@
 	
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="icon" 
+      type="image/ico" 
+      href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon-iphone.png" /> 
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-ipad.png" /> 
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone4.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad3.png" />
+      <meta property="og:image" content="http://redditedit.com/images/thumb1.png"/>
+      <meta property="og:title" content="The Reddit Edit - The news, by Reddit" />
+      <meta property="og:site_name" content="redditedit.com" />
+      <meta property="og:url" content="http://www.redditedit.com" />
+      <meta property="og:description"
+          content="From bizarre news to outlandish images, The Reddit Edit lists the most popular links on the web, pulled from the most newsworthy corners of Reddit"/>
 </head>
 <body>
 

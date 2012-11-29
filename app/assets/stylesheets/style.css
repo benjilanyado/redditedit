@@ -95,11 +95,6 @@
 	float: left;
 }
 
-#gridtitle img {
-
-	padding: 10px 0px;
-	width: 200px;
-}
 
 #grid1, #grid7, #grid13 {
 	
@@ -157,13 +152,41 @@
 	float: left;
 	background: rgb(218, 230, 129);
 	
+}
 
+#gridtitle img {
 
+	padding: 10px 0px;
+	width: 200px;
 }
 
 #grid8 #gridtitle img {
 
-	padding-top: 20px;
+	width: 110px;
+}
+
+#grid10 #gridtitle img {
+
+	padding-top: 15px;
+}
+
+#grid11 #gridtitle img {
+	width: 270px;
+}
+
+#grid12 #gridtitle img {
+	width: 270px;
+}
+
+#grid9 #gridtitle img {
+
+	width: 250px;
+	padding-top: 5px;
+}
+
+#grid8 #gridtitle img {
+
+	padding-top: 15px;
 }
 
 #grid11 #gridtitle img {
@@ -176,21 +199,28 @@
 	padding-top: 30px;
 }
 
-#grid13 #gridtitle img, #grid14 #gridtitle img  {
+#grid13 #gridtitle img {
 
-	padding-top: 20px;
+	width: 250px;
+	padding-top: 30px;
+}
+
+#grid14 #gridtitle img  {
+
+	padding-top: 30px;
 }
 
 #grid15 #gridtitle img {
 
-	padding-top: 25px
+	padding-top: 25px;
+	width: 230px
 }
 
 #items {
 
 	width: 5100px;
 	position:absolute;
-	left: 0px;
+	left: -1920px;
 }
 
 #items p a {
