@@ -803,6 +803,11 @@ h1 a{
 	min-width: 100%;
 }
 
+#picstitle {
+
+	padding-left: 0px;
+}
+
 
 } 
 /* END OF MEDIA QUERIES*/
