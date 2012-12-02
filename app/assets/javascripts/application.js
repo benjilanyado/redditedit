@@ -192,7 +192,7 @@ function leftMainClick() {
 
   $(document).scroll(function(event) {
 
-    $("#lightabout").fadeOut()
+    $("#interactive").fadeOut()
 
 
   });
