@@ -1,10 +1,10 @@
-<body>
+
 
 	<div id="aboutlink">
 	<h2><a href="#">What the...?</a></h2>
    	</div>
    	<div id="genassembly">
-	<p>Triggered by...</a></p>
+	<p>Triggered by...</p>
 	<a href="http://generalassemb.ly/education/?where=london" target="_blank"><img src="images/genassembly.png"></a>
    	</div>
 
@@ -149,7 +149,7 @@
 					<a href="#"><img src="images/rightbutton.png"></a>
 			</div>	
 			<div id="wantmore"> 
-				<a href="#"<p>News junky?</p></a>
+				<a href="#"><p>News junky?</p></a>
 			</div>
 
 
@@ -180,13 +180,13 @@
 		
 	<div id="items">
 
-				<ul>
+				
 
-					<li>
+					
 
 						<div id="grid7" class="grid_4">
 							<a href="<%= Section.find(13).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/nytlogo.png">
 							</div>
 							
@@ -194,292 +194,292 @@
 
 
 							<% Section.find(13).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p></p>
-
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
 
-					<li>	
+					
+
+						
 
 						
 						<div id="grid8" class="grid_4">
 							<a href="<%= Section.find(10).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/foxnews.png">
 							</div>
 							</a>
 
 							<% Section.find(10).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, ("http://www." + story.url), :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid9" class="grid_4">
 							<a href="<%= Section.find(12).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/huffpo.png">
 							</div>
 							</a>
 
 							<% Section.find(12).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-						<li>
+					
 						<div id="grid10" class="grid_4">
 							<a href="<%= Section.find(15).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/WSJ.png">
 							</div>
 							</a>
 
 							<% Section.find(15).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, ("http://online.wsj.com" + story.url), :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid11" class="grid_4">
 							<a href="<%= Section.find(14).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/wapo.png">
 							</div>
 							</a>
 
 							<% Section.find(14).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid12" class="grid_4">
 							<a href="<%= Section.find(9).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/buzzfeed.png">
 							</div>
 							</a>
 
 							<% Section.find(9).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, ("http://www.buzzfeed.com" + story.url), :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid13" class="grid_4">
 							<a href="<%= Section.find(16).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/yahoo.png">
 							</div>
 							</a>
 
 							<% Section.find(16).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, ("http://news.yahoo.com" + story.url), :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid14" class="grid_4">
 							<a href="<%= Section.find(8).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/bbc.png">
 							</div>
 							</a>
 
 							<% Section.find(8).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid15" class="grid_4">
 							<a href="<%= Section.find(11).url %>" target="_blank">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<img src="images/guardian.png">
 							</div>
 							</a>
 
 							<% Section.find(11).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 
 						<div id="grid1" class="grid_4">
 
-							<div id="gridtitle">
-							<a href="<%= Section.find(1).url %>" target="_blank"><h1><h2><%= Section.find(1).name %></h2></h1><p> /r/worldnews</p>
+							<div class="gridtitle">
+							<a href="<%= Section.find(1).url %>" target="_blank"><h2><%= Section.find(1).name %></h2><p> /r/worldnews</p>
 							</div>
 							<% Section.find(1).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
 					
-					<li>	
+					
+						
 
 						<div id="grid2" class="grid_4">
-							<div id="gridtitle">
-							<a href="<%= Section.find(2).url %>" target="_blank"><h1><h2><%= Section.find(2).name %></h2></h1><p> /r/politics</p>
+							<div class="gridtitle">
+							<a href="<%= Section.find(2).url %>" target="_blank"><h2><%= Section.find(2).name %></h2><p> /r/politics</p>
 							</div>
 							<% Section.find(2).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
 
-					</li>
+					
 
-					<li>
+					
 						<div id="grid3" class="grid_4">
-							<div id="gridtitle">
-							<a href="<%= Section.find(3).url %>" target="_blank"><h1><h2><%= Section.find(3).name %></h2></h1><p> /r/technology</p>
+							<div class="gridtitle">
+							<a href="<%= Section.find(3).url %>" target="_blank"><h2><%= Section.find(3).name %></h2><p> /r/technology</p>
 							</div>
 							<% Section.find(3).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid4" class="grid_4">
-							<div id="gridtitle">
-							<a href="<%= Section.find(5).url %>" target="_blank"><h1><h2><%= Section.find(5).name %></h2></h1><p> /r/science</p>
+							<div class="gridtitle">
+							<a href="<%= Section.find(5).url %>" target="_blank"><h2><%= Section.find(5).name %></h2><p> /r/science</p>
 							</div>
 							<% Section.find(5).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid5" class="grid_4">
-							<div id="gridtitle">
-							<a href="<%= Section.find(6).url %>" target="_blank"><h1><h2><%= Section.find(6).name %></h2></h1><p> reddit.com</p>
+							<div class="gridtitle">
+							<a href="<%= Section.find(6).url %>" target="_blank"><h2><%= Section.find(6).name %></h2><p> reddit.com</p>
 							</div>
 							<% Section.find(6).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 
-					<li>
+					
 						<div id="grid6" class="grid_4">
-							<div id="gridtitle">
+							<div class="gridtitle">
 								<div id="picstitle">
-									<a href="<%= Section.find(7).url %>" target="_blank"><h1><h2><%= Section.find(7).name %></h2></h1><p> /r/pics</p>
+									<a href="<%= Section.find(7).url %>" target="_blank"><h2><%= Section.find(7).name %></h2><p> /r/pics</p>
 								</div>
 								<div id="slideshowlink" >
 									<a href="#"><img src="images/slideshow.png"></a>
 								</div>	
 							</div>
 							<% Section.find(7).stories.each do |story| %>
-							<div id="story1">
+							<div class="story1">
 
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
 
-							<% end %>
 							</div>
+							<% end %>
 						</div>
-					</li>
+					
 					
 
-				</ul>
+				
 
 		
 
@@ -487,6 +487,7 @@
 
 </div>	<!-- content wrapper container  !-->
 
+</div> <!-- wrapper -->
 
 
 
@@ -494,5 +495,4 @@
 
 
 
-	</div>
-</body>
+

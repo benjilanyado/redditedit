@@ -154,63 +154,63 @@
 	
 }
 
-#gridtitle img {
+.gridtitle img {
 
 	padding: 10px 0px;
 	width: 200px;
 }
 
-#grid8 #gridtitle img {
+#grid8 .gridtitle img {
 
 	width: 110px;
 }
 
-#grid10 #gridtitle img {
+#grid10 .gridtitle img {
 
 	padding-top: 15px;
 }
 
-#grid11 #gridtitle img {
+#grid11 .gridtitle img {
 	width: 270px;
 }
 
-#grid12 #gridtitle img {
+#grid12 .gridtitle img {
 	width: 270px;
 }
 
-#grid9 #gridtitle img {
+#grid9 .gridtitle img {
 
 	width: 250px;
 	padding-top: 5px;
 }
 
-#grid8 #gridtitle img {
+#grid8 .gridtitle img {
 
 	padding-top: 15px;
 }
 
-#grid11 #gridtitle img {
+#grid11 .gridtitle img {
 
 	padding-top: 35px;
 }
 
-#grid12 #gridtitle img {
+#grid12 .gridtitle img {
 
 	padding-top: 30px;
 }
 
-#grid13 #gridtitle img {
+#grid13 .gridtitle img {
 
 	width: 250px;
 	padding-top: 30px;
 }
 
-#grid14 #gridtitle img  {
+#grid14 .gridtitle img  {
 
 	padding-top: 30px;
 }
 
-#grid15 #gridtitle img {
+#grid15 .gridtitle img {
 
 	padding-top: 25px;
 	width: 230px
@@ -239,7 +239,7 @@
 
 
 
-#story1, #story2, #story3  {
+.story1  {
 
 	border-top: 1px black dashed;
 	padding: 0px 5px;
@@ -248,7 +248,7 @@
 }
 
 
-#gridtitle p {
+#items .gridtitle p {
 
 
 	color: black;
@@ -258,11 +258,11 @@
 }
 
 
-#gridtitle {
+.gridtitle {
 
 	height: 114px;
 }
-#gridtitle a {
+.gridtitle a {
 
 	text-decoration: none;
 	color: black;
@@ -288,7 +288,7 @@ h1 a{
 	color: black;
 }
 
-#gridtitle h2 {
+#items .gridtitle h2 {
 
 	font-family: Codystar;
 	font-size:	35px;
