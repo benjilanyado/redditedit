@@ -184,7 +184,7 @@
 
 					
 
-						<div id="grid7" class="grid_4">
+						<div id="grid7" class="grid_4" class="mainstream">
 							<a href="http://www.nytimes.com/most-popular" target="_blank">
 							<div class="gridtitle">
 								<img src="images/nytlogo.png">
@@ -208,7 +208,7 @@
 						
 
 						
-						<div id="grid8" class="grid_4">
+						<div id="grid8" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(10).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/foxnews.png">
@@ -228,7 +228,7 @@
 					
 
 					
-						<div id="grid9" class="grid_4">
+						<div id="grid9" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(12).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/huffpo.png">
@@ -248,7 +248,7 @@
 					
 
 					
-						<div id="grid10" class="grid_4">
+						<div id="grid10" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(15).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/WSJ.png">
@@ -268,7 +268,7 @@
 					
 
 					
-						<div id="grid11" class="grid_4">
+						<div id="grid11" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(14).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/wapo.png">
@@ -288,7 +288,7 @@
 					
 
 					
-						<div id="grid12" class="grid_4">
+						<div id="grid12" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(9).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/buzzfeed.png">
@@ -308,7 +308,7 @@
 					
 
 					
-						<div id="grid13" class="grid_4">
+						<div id="grid13" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(16).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/yahoo.png">
@@ -328,7 +328,7 @@
 					
 
 					
-						<div id="grid14" class="grid_4">
+						<div id="grid14" class="grid_4" class="mainstream">
 							<a href="http://www.bbc.co.uk/news/" target="_blank">
 							<div class="gridtitle">
 								<img src="images/bbc.png">
@@ -348,7 +348,7 @@
 					
 
 					
-						<div id="grid15" class="grid_4">
+						<div id="grid15" class="grid_4" class="mainstream">
 							<a href="<%= Section.find(11).url %>" target="_blank">
 							<div class="gridtitle">
 								<img src="images/guardian.png">
@@ -369,7 +369,7 @@
 
 					
 
-						<div id="grid1" class="grid_4">
+						<div id="grid1" class="grid_4" class="reddit">
 
 							<div class="gridtitle">
 							<a href="<%= Section.find(1).url %>" target="_blank"><h2><%= Section.find(1).name %></h2><p> /r/worldnews</p>
@@ -388,7 +388,7 @@
 					
 						
 
-						<div id="grid2" class="grid_4">
+						<div id="grid2" class="grid_4" class="reddit">
 							<div class="gridtitle">
 							<a href="<%= Section.find(2).url %>" target="_blank"><h2><%= Section.find(2).name %></h2><p> /r/politics</p>
 							</div>
@@ -406,7 +406,7 @@
 					
 
 					
-						<div id="grid3" class="grid_4">
+						<div id="grid3" class="grid_4" class="reddit">
 							<div class="gridtitle">
 							<a href="<%= Section.find(3).url %>" target="_blank"><h2><%= Section.find(3).name %></h2><p> /r/technology</p>
 							</div>
@@ -423,7 +423,7 @@
 					
 
 					
-						<div id="grid4" class="grid_4">
+						<div id="grid4" class="grid_4" class="reddit">
 							<div class="gridtitle">
 							<a href="<%= Section.find(5).url %>" target="_blank"><h2><%= Section.find(5).name %></h2><p> /r/science</p>
 							</div>
@@ -440,7 +440,7 @@
 					
 
 					
-						<div id="grid5" class="grid_4">
+						<div id="grid5" class="grid_4" class="reddit">
 							<div class="gridtitle">
 							<a href="<%= Section.find(6).url %>" target="_blank"><h2><%= Section.find(6).name %></h2><p> reddit.com</p>
 							</div>
@@ -457,7 +457,7 @@
 					
 
 					
-						<div id="grid6" class="grid_4">
+						<div id="grid6" class="grid_4" class="reddit">
 							<div class="gridtitle">
 								<div id="picstitle">
 									<a href="<%= Section.find(7).url %>" target="_blank"><h2><%= Section.find(7).name %></h2><p> /r/pics</p>
@@ -472,6 +472,188 @@
 							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
 
 							<p><%= link_to story.source, story.url %></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+					<div id="grid16" class="grid_4" class="mainstream">
+							<a href="http://www.nytimes.com/most-popular" target="_blank">
+							<div class="gridtitle">
+								<img src="images/nytlogo.png">
+							</div>
+							
+							</a>
+
+
+							<% Section.find(13).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+
+							<p></p>
+							</div>
+							<% end %>
+						</div>
+
+					
+
+						
+
+						
+						<div id="grid17" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(10).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/foxnews.png">
+							</div>
+							</a>
+
+							<% Section.find(10).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, ("http://www." + story.url), :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid18" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(12).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/huffpo.png">
+							</div>
+							</a>
+
+							<% Section.find(12).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid19" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(15).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/WSJ.png">
+							</div>
+							</a>
+
+							<% Section.find(15).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, ("http://online.wsj.com" + story.url), :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid20" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(14).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/wapo.png">
+							</div>
+							</a>
+
+							<% Section.find(14).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid21" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(9).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/buzzfeed.png">
+							</div>
+							</a>
+
+							<% Section.find(9).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, ("http://www.buzzfeed.com" + story.url), :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid22" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(16).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/yahoo.png">
+							</div>
+							</a>
+
+							<% Section.find(16).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, ("http://news.yahoo.com" + story.url), :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid23" class="grid_4" class="mainstream">
+							<a href="http://www.bbc.co.uk/news/" target="_blank">
+							<div class="gridtitle">
+								<img src="images/bbc.png">
+							</div>
+							</a>
+
+							<% Section.find(8).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+
+							<p></p>
+
+							</div>
+							<% end %>
+						</div>
+					
+
+					
+						<div id="grid24" class="grid_4" class="mainstream">
+							<a href="<%= Section.find(11).url %>" target="_blank">
+							<div class="gridtitle">
+								<img src="images/guardian.png">
+							</div>
+							</a>
+
+							<% Section.find(11).stories.each do |story| %>
+							<div class="story1">
+
+							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+
+							<p></p>
 
 							</div>
 							<% end %>

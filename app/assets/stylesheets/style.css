@@ -96,7 +96,7 @@
 }
 
 
-#grid1, #grid7, #grid13 {
+#grid1, #grid7, #grid13, #grid16, #grid22 {
 	
 	margin-top: 10px;
 	float: left;
@@ -105,7 +105,7 @@
 
 }
 
-#grid2, #grid8, #grid14 {
+#grid2, #grid8, #grid14, #grid17, #grid23 {
 
 	
 	height: inherit;
@@ -114,7 +114,7 @@
 	background: rgb(255, 252, 221);
 }
 
-#grid3, #grid9, #grid15 {
+#grid3, #grid9, #grid15, #grid18, #grid24 {
 
 	
 	height: inherit;
@@ -123,7 +123,7 @@
 	background: rgb(255, 216, 216);
 }
 
-#grid4, #grid10 {
+#grid4, #grid10, #grid19 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -134,7 +134,7 @@
 
 }
 
-#grid5, #grid11 {
+#grid5, #grid11, #grid20 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -145,7 +145,7 @@
 
 }
 
-#grid6, #grid12 {
+#grid6, #grid12, #grid21 {
 
 	height: inherit;
 	margin-top: 10px;
@@ -160,57 +160,46 @@
 	width: 200px;
 }
 
-#grid8 .gridtitle img {
+#grid8 .gridtitle img, #grid17 .gridtitle img {
 
 	width: 110px;
+	padding-top: 15px;
 }
 
-#grid10 .gridtitle img {
+#grid10 .gridtitle img, #grid19 .gridtitle img {
 
 	padding-top: 15px;
 }
 
-#grid11 .gridtitle img {
+#grid11 .gridtitle img, #grid20 .gridtitle img {
 	width: 270px;
+	padding-top: 35px;
 }
 
-#grid12 .gridtitle img {
+#grid12 .gridtitle img, #grid21 .gridtitle img {
 	width: 270px;
+	padding-top: 30px;
 }
 
-#grid9 .gridtitle img {
+#grid9 .gridtitle img, #grid18 .gridtitle img {
 
 	width: 250px;
 	padding-top: 5px;
 }
 
-#grid8 .gridtitle img {
 
-	padding-top: 15px;
-}
-
-#grid11 .gridtitle img {
-
-	padding-top: 35px;
-}
-
-#grid12 .gridtitle img {
-
-	padding-top: 30px;
-}
-
-#grid13 .gridtitle img {
+#grid13 .gridtitle img, #grid22 .gridtitle img {
 
 	width: 250px;
 	padding-top: 30px;
 }
 
-#grid14 .gridtitle img  {
+#grid14 .gridtitle img, #grid23 .gridtitle img  {
 
 	padding-top: 30px;
 }
 
-#grid15 .gridtitle img {
+#grid15 .gridtitle img, #grid24 .gridtitle img {
 
 	padding-top: 25px;
 	width: 230px
@@ -743,6 +732,11 @@ h1 a{
 
 /*END OF LIGHTBOX*/
 
+#grid16 #grid17, #grid18, #grid19, #grid20, #grid21, #grid22, #grid23, #grid24 {
+
+	display: none
+}
+
 /*MEDIA QUERIES */
 
 @media (max-width: 480px) {
@@ -776,7 +770,7 @@ h1 a{
 		width: 400px;
 	}
 
-	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6 {
+	#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid16, #grid17, #grid18, #grid19, #grid20, #grid21, #grid22, #grid23, #grid24 {
 		display: block;
 		width: 100%;
 		height: inherit;
