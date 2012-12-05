@@ -84,6 +84,7 @@ function leftMainClick() {
       $("#items").animate({left:  "0" }, 1000)
 
         $("#toggle2").fadeIn()
+        $("#mainstreamcopy").fadeIn()
       
 
             });
@@ -107,6 +108,7 @@ function leftMainClick() {
     $("#buttons").css({display:  "block"})
     $("#buttons2").css({display:  "none"})
   $("#toggle2").fadeOut()
+  $("#mainstreamcopy").fadeOut()
     $("#letteri").fadeOut(function(){
 
       $("#gaps").fadeIn(function() {
