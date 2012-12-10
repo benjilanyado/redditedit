@@ -95,6 +95,11 @@
 	float: left;
 }
 
+#grid16, #grid17, #grid18, #grid19, #grid20, #grid21, #grid22, #grid23, #grid24 {
+
+	display: none;
+}
+
 
 #grid1, #grid7, #grid13, #grid16, #grid22 {
 	
@@ -741,10 +746,7 @@ h1 a{
 
 /*END OF LIGHTBOX*/
 
-#grid16 #grid17, #grid18, #grid19, #grid20, #grid21, #grid22, #grid23, #grid24 {
 
-	display: none
-}
 
 /*MEDIA QUERIES */
 
