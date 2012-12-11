@@ -194,7 +194,7 @@ function leftMainClick() {
 
   $(document).scroll(function(event) {
 
-    $("#interactive").fadeOut()
+    $("#interactive, #genassembly").fadeOut()
 
 
   });
