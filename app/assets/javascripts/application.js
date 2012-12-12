@@ -54,7 +54,7 @@ function leftMainClick() {
   $("#buttons2 .rightbutton").click(function(event) {        
 
     event.preventDefault();
-
+    $("#mainstreamcopy").fadeOut()
     rightMainClick()
 
   });
