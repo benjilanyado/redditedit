@@ -509,12 +509,13 @@ h1 a{
 #mainstreamcopy {
 
 	position: absolute;
-	top: 180px;
+	top: 200px;
 	right: 870px;
 	display: none;
 	color: red;
 	font-size: 15px;
 	font-family: "futura-pt";
+	line-height: 1em;
 }
 
 
@@ -542,7 +543,8 @@ h1 a{
 	left: 865px;
 	font-family: "futura-pt";
 	color: red;
-	line-height: 20px;
+	line-height: 1.1em;
+	font-weight: bold;	
 	display: none
 }
 
