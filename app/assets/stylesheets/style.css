@@ -428,11 +428,16 @@ h1 a{
 
 	position: fixed;
 	top: 50px;
-	left: 10px;
+	left: 7px;
 	width: 210px;
-	font-family: "futura-pt";
+	font-family: "Futura";
 	font-size: 14px;
 	
+}
+
+#interactivecopy {
+
+	padding-left: 20px;
 }
 
 
