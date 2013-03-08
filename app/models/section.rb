@@ -19,7 +19,7 @@ class Section < ActiveRecord::Base
       story.url = entry[:href]
           
       if (id.to_i < 8)
-        story.source = doc.css('#siteTable .domain a')[r.first + index].text
+        story.source = doc.css('#siteTable .thing:not(.promoted) a.title')[r.first + index].text
       end #end of if statement
 
       if story.save
