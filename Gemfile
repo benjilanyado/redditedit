@@ -13,6 +13,8 @@ group :production do
 	gem 'pg'
 end
 
+gem "jquery-ui-rails"
+
 gem 'nokogiri'
 gem 'httparty'
 
