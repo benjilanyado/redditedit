@@ -1,4 +1,11 @@
 
+#interactiveimage img {
+
+	width: 145px;
+	height: 145px
+}
+
+
 #pagetitle {
 
 	
@@ -438,6 +445,19 @@ h1 a{
 #interactivecopy {
 
 	padding-left: 20px;
+}
+
+#interactivecopy2 {
+
+	text-align: center;
+	width: 140px;
+	font-size: 17px
+}
+
+#interactivecopy2 a {
+
+	text-decoration: none;
+	color: #60ACF0;
 }
 
 
