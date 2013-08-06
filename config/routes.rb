@@ -3,7 +3,7 @@ Rededit::Application.routes.draw do
 
   root to: "home#index"
 
-  ActiveAdmin.routes(self)
+  #ActiveAdmin.routes(self)
 
 
 
