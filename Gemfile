@@ -18,7 +18,7 @@ gem "jquery-rails", "2.3.0"
 gem 'nokogiri'
 gem 'httparty'
 
-gem 'activeadmin'
+#gem 'activeadmin'
 
 
 # Gems used only for assets and not required
