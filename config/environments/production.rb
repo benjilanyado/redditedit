@@ -5,6 +5,7 @@ Rededit::Application.configure do
   config.cache_classes = true
 
   
+  config.assets.compile = true
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
