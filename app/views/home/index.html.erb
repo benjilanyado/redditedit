@@ -241,7 +241,7 @@
 							<% Section.find(9).stories.each do |story| %>
 							<div class="story1">
 
-							<h2><%= link_to story.title, story.url, :target => "_blank" %></h2>
+							<h2><%= link_to story.title, ("http://www.buzzfeed.com" + story.url), :target => "_blank" %></h2>
 
 							<p></p>
 
